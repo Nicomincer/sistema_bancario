@@ -51,6 +51,9 @@ while True:
                 elif valor < 0:
                     print("Não é possível sacar um valor negativo. Escolha outro valor.\n")
                 
+                elif valor > saldo:
+                    print("você não tem saldo suficiente.\n")
+                    
                 else:
                     saldo -= valor 
                     numero_de_saques += 1 
